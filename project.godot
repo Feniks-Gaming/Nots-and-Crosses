@@ -8,9 +8,14 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Node",
+"class": "DebugManager",
+"language": "GDScript",
+"path": "res://Source/Utility/Debug/DebugManager.gd"
+} ]
 _global_script_class_icons={
-
+"DebugManager": ""
 }
 
 [application]
