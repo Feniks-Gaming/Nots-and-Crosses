@@ -7,13 +7,16 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="1551.3751"
+   width="1550"
    height="1550"
-   viewBox="0 0 410.468 410.10417"
+   viewBox="0 0 410.10417 410.10417"
    version="1.1"
    id="svg8"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
-   sodipodi:docname="Board.svg">
+   sodipodi:docname="Board.svg"
+   inkscape:export-filename="D:\Repos\Nots and Crosses\Assets\Board.png"
+   inkscape:export-xdpi="100"
+   inkscape:export-ydpi="100">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -23,9 +26,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.32"
-     inkscape:cx="573.12994"
-     inkscape:cy="859.09988"
+     inkscape:zoom="0.22627417"
+     inkscape:cx="2293.7211"
+     inkscape:cy="1526.5975"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="false"
@@ -37,7 +40,7 @@
      borderlayer="true"
      inkscape:window-width="2560"
      inkscape:window-height="1361"
-     inkscape:window-x="-9"
+     inkscape:window-x="2551"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
      inkscape:document-rotation="0"
@@ -52,7 +55,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -60,7 +63,7 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Layer 1"
-     transform="translate(-302.76601,-80.697922)">
+     transform="translate(-302.94797,-80.697922)">
     <g
        id="g32"
        transform="matrix(0.70602639,0,0,0.70602643,297.7568,184.18769)"
@@ -86,7 +89,8 @@
        inkscape:export-xdpi="100"
        inkscape:export-ydpi="100" />
     <g
-       id="g889">
+       id="g902"
+       style="opacity:0.999">
       <rect
          style="fill:#272736;stroke-width:0.524641;paint-order:markers fill stroke"
          id="rect936"
@@ -103,28 +107,24 @@
          x="568.93689"
          y="80.697922"
          rx="8.9958334" />
-      <g
-         id="g1007"
-         transform="translate(36.297531,73.190431)">
-        <rect
-           style="fill:#272736;stroke-width:0.524642;paint-order:markers fill stroke"
-           id="rect961"
-           width="17.991667"
-           height="410.10416"
-           x="132.82083"
-           y="-676.93646"
-           rx="8.9958334"
-           transform="rotate(90)" />
-        <rect
-           style="fill:#272736;stroke-width:0.52464;paint-order:markers fill stroke"
-           id="rect967"
-           width="17.991667"
-           height="410.10416"
-           x="274.30664"
-           y="-676.57263"
-           rx="8.9958334"
-           transform="rotate(90)" />
-      </g>
+      <rect
+         style="fill:#272736;stroke-width:0.524642;paint-order:markers fill stroke"
+         id="rect961"
+         width="17.991667"
+         height="410.10416"
+         x="206.01126"
+         y="-713.05212"
+         rx="8.9958334"
+         transform="rotate(90)" />
+      <rect
+         style="fill:#272736;stroke-width:0.52464;paint-order:markers fill stroke"
+         id="rect967"
+         width="17.991667"
+         height="410.10416"
+         x="347.49707"
+         y="-713.05212"
+         rx="8.9958334"
+         transform="rotate(90)" />
     </g>
   </g>
 </svg>
