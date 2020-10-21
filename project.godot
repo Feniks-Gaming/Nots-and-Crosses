@@ -9,12 +9,18 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Sprite",
+"class": "AvaliableShape",
+"language": "GDScript",
+"path": "res://Source/AvaliableShape/AvaliableShape.gd"
+}, {
 "base": "Node",
 "class": "DebugManager",
 "language": "GDScript",
 "path": "res://Source/Utility/Debug/DebugManager.gd"
 } ]
 _global_script_class_icons={
+"AvaliableShape": "",
 "DebugManager": ""
 }
 
@@ -23,6 +29,11 @@ _global_script_class_icons={
 config/name="Nots and Crosses"
 run/main_scene="res://Source/Test.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+Utility="*res://Source/Utility/Utility/Utility.tscn"
+GameManager="*res://Source/Autoloads/GameManager.tscn"
 
 [display]
 
