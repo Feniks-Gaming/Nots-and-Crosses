@@ -13,5 +13,7 @@ func add_avaliable_shapes_to_array() -> void:
 
 
 func activate_one_random_shape()-> void:
-	var shape_to_activate = Utility.choose(avaliable_shapes)
+	var shape_to_activate: AvaliableShape = Utility.choose(avaliable_shapes)
 	shape_to_activate.active = true
+
+

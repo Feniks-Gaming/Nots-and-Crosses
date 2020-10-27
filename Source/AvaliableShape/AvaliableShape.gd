@@ -15,6 +15,10 @@ func _process(delta) -> void:
 	_adjust_modulate()
 
 
+func _on_ShapePlacer_destroyed():
+	print("shape destroyed")
+
+
 func _on_Area2D_mouse_entered() -> void:
 	selectable = true
 
@@ -51,4 +55,6 @@ func _adjust_modulate() -> void:
 
 func _on_Area2D_mouse_exited() -> void:
 	selectable = false
+
+
 
