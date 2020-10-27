@@ -1,5 +1,5 @@
 class_name AvaliableShape
-extends "res://Source/Icon/Icon.gd"
+extends Icon
 
 var selectable: bool = false
 var selected: bool = false

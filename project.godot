@@ -9,7 +9,7 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "Sprite",
+"base": "Icon",
 "class": "AvaliableShape",
 "language": "GDScript",
 "path": "res://Source/AvaliableShape/AvaliableShape.gd"
@@ -18,10 +18,16 @@ _global_script_classes=[ {
 "class": "DebugManager",
 "language": "GDScript",
 "path": "res://Source/Utility/Debug/DebugManager.gd"
+}, {
+"base": "Sprite",
+"class": "Icon",
+"language": "GDScript",
+"path": "res://Source/Icon/Icon.gd"
 } ]
 _global_script_class_icons={
 "AvaliableShape": "",
-"DebugManager": ""
+"DebugManager": "",
+"Icon": ""
 }
 
 [application]

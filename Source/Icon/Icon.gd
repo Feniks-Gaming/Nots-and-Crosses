@@ -1,4 +1,5 @@
 extends Sprite
+class_name Icon
 
 enum Shapes {CROSS, CIRCLE}
 export(Shapes) var shape
