@@ -1,4 +1,5 @@
 extends Icon
+class_name ShapePlacer
 
 signal destroyed
 

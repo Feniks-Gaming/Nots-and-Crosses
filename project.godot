@@ -23,11 +23,17 @@ _global_script_classes=[ {
 "class": "Icon",
 "language": "GDScript",
 "path": "res://Source/Icon/Icon.gd"
+}, {
+"base": "Icon",
+"class": "ShapePlacer",
+"language": "GDScript",
+"path": "res://Source/Shape Placer/ShapePlacer.gd"
 } ]
 _global_script_class_icons={
 "AvaliableShape": "",
 "DebugManager": "",
-"Icon": ""
+"Icon": "",
+"ShapePlacer": ""
 }
 
 [application]

@@ -16,7 +16,7 @@ func _process(delta) -> void:
 
 
 func _on_ShapePlacer_destroyed():
-	print("shape destroyed")
+	_deselect()
 
 
 func _on_Area2D_mouse_entered() -> void:
@@ -26,7 +26,6 @@ func _on_Area2D_mouse_entered() -> void:
 func _toggle_selection() -> void:
 	if active:
 		_select()
-		_deselect()
 	else:
 		colour_adjused = true
 
@@ -41,9 +40,8 @@ func _select() -> void:
 
 func _deselect() -> void:
 	if selected:
-		if Input.is_action_just_pressed("mouse_right_click"):
-			selected = false
-			colour_adjused = false
+		selected = false
+		colour_adjused = false
 
 
 func _adjust_modulate() -> void:
