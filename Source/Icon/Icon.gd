@@ -10,6 +10,6 @@ onready var circle: Texture = preload("res://Assets/Circle.png")
 func _ready() -> void:
 	scale = Vector2(0.75,0.75)
 	if shape == Shapes.CROSS:
-		self.texture = cross
+		texture = cross
 	elif shape == Shapes.CIRCLE:
-		self.texture = circle
+		texture = circle

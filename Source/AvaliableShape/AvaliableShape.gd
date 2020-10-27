@@ -36,6 +36,7 @@ func _select() -> void:
 			selectable = false
 			selected = true
 			colour_adjused = true
+			create_shape_placer()
 
 
 func _deselect() -> void:
@@ -54,5 +55,14 @@ func _adjust_modulate() -> void:
 func _on_Area2D_mouse_exited() -> void:
 	selectable = false
 
+
+func create_shape_placer() -> void:
+	var shape_placer = ShapePlacer.new()
+	shape_placer.shape = shape
+	var scene = get_tree().current_scene
+	scene.add_child(shape_placer)
+	shape_placer.owner = scene
+	
+	
 
 
