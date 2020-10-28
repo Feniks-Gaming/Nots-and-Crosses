@@ -5,7 +5,7 @@
 [ext_resource path="res://Source/Board/Segment.gd" type="Script" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 269, 269 )
+extents = Vector2( 240, 240 )
 
 [node name="Board" type="Node2D"]
 script = ExtResource( 2 )
@@ -19,7 +19,7 @@ __meta__ = {
 }
 
 [node name="TopLeft" type="Area2D" parent="Segments"]
-position = Vector2( -538, -538 )
+position = Vector2( -550, -550 )
 script = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Segments/TopLeft"]
@@ -27,7 +27,7 @@ visible = false
 shape = SubResource( 1 )
 
 [node name="TopCentre" type="Area2D" parent="Segments"]
-position = Vector2( 0, -538 )
+position = Vector2( 0, -550 )
 script = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Segments/TopCentre"]
@@ -35,7 +35,7 @@ visible = false
 shape = SubResource( 1 )
 
 [node name="TopRight" type="Area2D" parent="Segments"]
-position = Vector2( 538, -538 )
+position = Vector2( 550, -550 )
 script = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Segments/TopRight"]
@@ -43,7 +43,7 @@ visible = false
 shape = SubResource( 1 )
 
 [node name="MiddleLeft" type="Area2D" parent="Segments"]
-position = Vector2( -538, 0 )
+position = Vector2( -550, 0 )
 script = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Segments/MiddleLeft"]
@@ -58,7 +58,7 @@ visible = false
 shape = SubResource( 1 )
 
 [node name="MiddleRight" type="Area2D" parent="Segments"]
-position = Vector2( 538, 0 )
+position = Vector2( 550, 0 )
 script = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Segments/MiddleRight"]
@@ -66,7 +66,7 @@ visible = false
 shape = SubResource( 1 )
 
 [node name="BotomLeft" type="Area2D" parent="Segments"]
-position = Vector2( -538, 538 )
+position = Vector2( -550, 550 )
 script = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Segments/BotomLeft"]
@@ -74,7 +74,7 @@ visible = false
 shape = SubResource( 1 )
 
 [node name="BottomCentre" type="Area2D" parent="Segments"]
-position = Vector2( 0, 538 )
+position = Vector2( 0, 550 )
 script = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Segments/BottomCentre"]
@@ -82,7 +82,7 @@ visible = false
 shape = SubResource( 1 )
 
 [node name="BottomRight" type="Area2D" parent="Segments"]
-position = Vector2( 538, 538 )
+position = Vector2( 550, 550 )
 script = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Segments/BottomRight"]
