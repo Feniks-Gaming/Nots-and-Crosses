@@ -1,5 +1,9 @@
 extends Area2D
 
+# Segments make each cell of a board players play on.
+# Segments connect to board and inform it via signals whem mouse is inside the
+# the segment
+
 signal mouse_inside_area(segment)
 signal mouse_outside_area(segment)
 

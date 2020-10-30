@@ -56,6 +56,7 @@ func _on_Board_segment_activated(segment)-> void:
 
 
 func _on_Board_segment_deactivated() -> void:
+	# Triggered when mouse leaves a segment on a board
 	can_move = true
 
 

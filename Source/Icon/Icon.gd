@@ -1,6 +1,9 @@
 extends Sprite
 class_name Icon
 
+# Icon is a base class that allows us to asign the shape either a cross or a 
+# circle to it's children. It alls oscales down shapes to fit a board. 
+
 enum Shapes {CROSS, CIRCLE}
 export(Shapes) var shape
 

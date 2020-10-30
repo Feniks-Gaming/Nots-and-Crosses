@@ -1,5 +1,8 @@
 extends Node
 
+# Autoload class used to set up a board and control the players turn and active
+# shape
+
 var avaliable_shapes: Array = []
 
 
@@ -14,6 +17,6 @@ func add_avaliable_shapes_to_array() -> void:
 
 func activate_one_random_shape()-> void:
 	var shape_to_activate: AvaliableShape = Utility.choose(avaliable_shapes)
-	shape_to_activate.active = true
+	shape_to_activate.is_active = true
 
 

@@ -1,7 +1,7 @@
 extends Node
 # This node holds all reusable functions to be used accross multiple of nodes
 
-# text testing varibles
+# Text testing varibles
 var lorem_ipsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non nulla tempor dui gravida ultrices a vel enim. Aliquam erat volutpat. Nulla malesuada purus ut justo placerat, et accumsan augue bibendum. Pellentesque mattis commodo efficitur. Maecenas auctor varius feugiat. Aenean eget lacus at nisi luctus maximus. Integer auctor placerat arcu, eu venenatis velit. In tincidunt ipsum id varius fringilla. Cras id porta libero, quis mattis neque. Nam eget nulla egestas nibh commodo porta sed vel ante. Donec viverra est lorem, vel fringilla massa rhoncus sed. Donec tristique nec mauris iaculis commodo"
 var lazy_dog = "The quick brown fox jumps over the lazy dog"
 

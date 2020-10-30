@@ -1,10 +1,10 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Source/Tools/Debug/DebugOverlay.gd" type="Script" id=1]
-[ext_resource path="res://Source/Tools/Debug/DebugManager.gd" type="Script" id=2]
+[ext_resource path="res://Source/Utility/Debug/DebugManager.gd" type="Script" id=1]
+[ext_resource path="res://Source/Utility/Debug/DebugOverlay.gd" type="Script" id=2]
 
 [node name="DebugOverlay" type="CanvasLayer"]
-script = ExtResource( 1 )
+script = ExtResource( 2 )
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 rect_min_size = Vector2( 100, 100 )
@@ -15,5 +15,4 @@ __meta__ = {
 }
 
 [node name="DebugManager" type="Node" parent="."]
-script = ExtResource( 2 )
-[connection signal="stat_passed" from="DebugManager" to="." method="_on_DebugManager_stat_passed"]
+script = ExtResource( 1 )
