@@ -20,11 +20,22 @@ func _process(delta) -> void:
 
 
 func _on_ShapePlacer_destroyed():
+	# allows as to desselect shape 
 	_deselect()
+
+
+func _on_ShapePlacer_placed():
+	# emited when shape is place in board changes new active player
+	is_active = not is_active
+	is_colour_adjused = false
 
 
 func _on_Area2D_mouse_entered() -> void:
 	is_selectable = true
+
+
+func _on_Area2D_mouse_exited() -> void:
+	is_selectable = false
 
 
 func _toggle_selection() -> void:
@@ -35,6 +46,7 @@ func _toggle_selection() -> void:
 
 
 func _select() -> void:
+	# selectable is true when mouse is over the shape
 	if is_selectable:
 		if Input.is_action_just_pressed("mouse_left_click"):
 			is_selectable = false
@@ -56,17 +68,9 @@ func _adjust_modulate() -> void:
 		modulate = COLOUR_NORMAL
 
 
-func _on_Area2D_mouse_exited() -> void:
-	is_selectable = false
-
-
 func create_shape_placer() -> void:
 	var shape_placer = ShapePlacer.new()
 	shape_placer.shape = shape
 	var scene = get_tree().current_scene
 	scene.add_child(shape_placer)
 	shape_placer.owner = scene
-	
-	
-
-
