@@ -44,7 +44,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Nots and Crosses"
+config/name="Noughts and Crosses"
 run/main_scene="res://Source/Test.tscn"
 config/icon="res://icon.png"
 
