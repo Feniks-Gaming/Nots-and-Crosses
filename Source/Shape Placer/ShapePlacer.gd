@@ -89,5 +89,3 @@ func create_shape_on_board() -> void:
 
 
 
-
-
