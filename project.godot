@@ -24,7 +24,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Source/Utility/Debug/DebugManager.gd"
 }, {
-"base": "Sprite",
+"base": "Area2D",
 "class": "Icon",
 "language": "GDScript",
 "path": "res://Source/Icon/Icon.gd"

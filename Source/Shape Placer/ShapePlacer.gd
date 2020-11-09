@@ -38,8 +38,9 @@ func _connect_to_board() -> void:
 	# mouse is in at a time
 	var scene: Node2D = get_tree().current_scene
 	var board:Board = scene.find_node("Board")
-	board.connect("segment_activated",self, "_on_Board_segment_activated")
-	board.connect("segment_deacivated",self,"_on_Board_segment_deactivated")
+	if board:
+		board.connect("segment_activated",self, "_on_Board_segment_activated")
+		board.connect("segment_deacivated",self,"_on_Board_segment_deactivated")
 
 
 func toggle_movement()-> void:

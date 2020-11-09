@@ -30,11 +30,11 @@ func _on_ShapePlacer_placed():
 	is_colour_adjused = false
 
 
-func _on_Area2D_mouse_entered() -> void:
+func _on_mouse_entered() -> void:
 	is_selectable = true
 
 
-func _on_Area2D_mouse_exited() -> void:
+func _on_mouse_exited() -> void:
 	is_selectable = false
 
 
@@ -52,6 +52,7 @@ func _select() -> void:
 			is_selectable = false
 			is_selected = true
 			is_colour_adjused = true
+			print(shape)
 			create_shape_placer()
 
 
@@ -63,14 +64,15 @@ func _deselect() -> void:
 
 func _adjust_modulate() -> void:
 	if is_colour_adjused:
-		modulate = COLOUR_GRAY
+		my_sprite.modulate = COLOUR_GRAY
 	else:
-		modulate = COLOUR_NORMAL
+		my_sprite.modulate = COLOUR_NORMAL
 
 
 func create_shape_placer() -> void:
-	var shape_placer = ShapePlacer.new()
+	var shape_placer: ShapePlacer = ShapePlacer.new()
 	shape_placer.shape = shape
 	var scene = get_tree().current_scene
+	print(scene.name)
 	scene.add_child(shape_placer)
 	shape_placer.owner = scene
