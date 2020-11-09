@@ -8,6 +8,8 @@ class_name ShapePlacer
 signal destroyed
 signal placed
 
+const icon = preload("res://Source/Icon/Icon.tscn")
+
 var can_move: bool = true
 var can_create_shapes: bool = false
 var segment_to_stay_in: Area2D
@@ -77,7 +79,7 @@ func destroy() -> void:
 func create_shape_on_board() -> void:
 	if can_create_shapes:
 		if Input.is_action_just_pressed("mouse_left_click"):
-			var shape_to_create = Icon.new()
+			var shape_to_create = icon.instance()
 			shape_to_create.shape = shape
 			shape_to_create.global_position = global_position
 			

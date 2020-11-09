@@ -13,6 +13,8 @@ var is_colour_adjused = false
 const COLOUR_GRAY := Color(0.219608, 0.219608, 0.219608)
 const COLOUR_NORMAL := Color(1, 1, 1) 
 
+const shape_placer = preload("res://Source/Shape Placer/ShapePlacer.tscn")
+
 
 func _process(delta) -> void:
 	_toggle_selection()
@@ -70,9 +72,8 @@ func _adjust_modulate() -> void:
 
 
 func create_shape_placer() -> void:
-	var shape_placer: ShapePlacer = ShapePlacer.new()
-	shape_placer.shape = shape
+	var place_shaper_to_make = shape_placer.instance()
+	place_shaper_to_make.shape = shape
 	var scene = get_tree().current_scene
-	print(scene.name)
-	scene.add_child(shape_placer)
-	shape_placer.owner = scene
+	scene.add_child(place_shaper_to_make)
+	place_shaper_to_make.owner = scene
