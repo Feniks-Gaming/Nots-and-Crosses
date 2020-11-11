@@ -25,5 +25,7 @@ func _on_Segment_mouse_outside_area(segment:Area2D):
 	# segment yet. 
 	if active_segment == segment:
 		emit_signal("segment_deacivated")
+		print("mouse out")
+
 
 

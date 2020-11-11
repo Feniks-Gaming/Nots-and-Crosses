@@ -1,0 +1,2 @@
+extends BaseIcon
+class_name Placed_Shape

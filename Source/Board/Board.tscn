@@ -31,7 +31,6 @@ position = Vector2( 0, -550 )
 script = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Segments/TopCentre"]
-visible = false
 shape = SubResource( 1 )
 
 [node name="TopRight" type="Area2D" parent="Segments"]
@@ -39,7 +38,6 @@ position = Vector2( 550, -550 )
 script = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Segments/TopRight"]
-visible = false
 shape = SubResource( 1 )
 
 [node name="MiddleLeft" type="Area2D" parent="Segments"]
@@ -47,14 +45,12 @@ position = Vector2( -550, 0 )
 script = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Segments/MiddleLeft"]
-visible = false
 shape = SubResource( 1 )
 
 [node name="MiddleCentre" type="Area2D" parent="Segments"]
 script = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Segments/MiddleCentre"]
-visible = false
 shape = SubResource( 1 )
 
 [node name="MiddleRight" type="Area2D" parent="Segments"]
@@ -62,7 +58,6 @@ position = Vector2( 550, 0 )
 script = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Segments/MiddleRight"]
-visible = false
 shape = SubResource( 1 )
 
 [node name="BotomLeft" type="Area2D" parent="Segments"]
@@ -70,7 +65,6 @@ position = Vector2( -550, 550 )
 script = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Segments/BotomLeft"]
-visible = false
 shape = SubResource( 1 )
 
 [node name="BottomCentre" type="Area2D" parent="Segments"]
@@ -78,7 +72,6 @@ position = Vector2( 0, 550 )
 script = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Segments/BottomCentre"]
-visible = false
 shape = SubResource( 1 )
 
 [node name="BottomRight" type="Area2D" parent="Segments"]
@@ -86,5 +79,4 @@ position = Vector2( 550, 550 )
 script = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Segments/BottomRight"]
-visible = false
 shape = SubResource( 1 )

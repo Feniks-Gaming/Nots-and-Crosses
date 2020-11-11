@@ -8,7 +8,7 @@ class_name ShapePlacer
 signal destroyed
 signal placed
 
-var icon = NodePathsHolder.BaseIcon_scene
+var placed_shape = NodePathsHolder.PlacedShape_scene
 
 var can_move: bool = true
 var can_create_shapes: bool = false
@@ -49,7 +49,7 @@ func toggle_movement()-> void:
 	if can_move:
 		follow_mouse()
 	else:
-	 global_position = segment_to_stay_in.global_position
+		global_position = segment_to_stay_in.global_position
 
 
 func follow_mouse() -> void:
@@ -79,7 +79,7 @@ func destroy() -> void:
 func create_shape_on_board() -> void:
 	if can_create_shapes:
 		if Input.is_action_just_pressed("mouse_left_click"):
-			var shape_to_create = icon.instance()
+			var shape_to_create = placed_shape.instance()
 			shape_to_create.shape = shape
 			shape_to_create.global_position = global_position
 			
