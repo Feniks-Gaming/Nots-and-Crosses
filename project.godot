@@ -9,10 +9,15 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "Icon",
+"base": "BaseIcon",
 "class": "AvaliableShape",
 "language": "GDScript",
-"path": "res://Source/AvaliableShape/AvaliableShape.gd"
+"path": "res://Source/Shapes/AvaliableShape/AvaliableShape.gd"
+}, {
+"base": "Area2D",
+"class": "BaseIcon",
+"language": "GDScript",
+"path": "res://Source/Shapes/BaseIcon/BaseIcon.gd"
 }, {
 "base": "Node2D",
 "class": "Board",
@@ -24,21 +29,16 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Source/Utility/Debug/DebugManager.gd"
 }, {
-"base": "Area2D",
-"class": "Icon",
-"language": "GDScript",
-"path": "res://Source/Icon/Icon.gd"
-}, {
-"base": "Icon",
+"base": "BaseIcon",
 "class": "ShapePlacer",
 "language": "GDScript",
-"path": "res://Source/Shape Placer/ShapePlacer.gd"
+"path": "res://Source/Shapes/Shape Placer/ShapePlacer.gd"
 } ]
 _global_script_class_icons={
 "AvaliableShape": "",
+"BaseIcon": "",
 "Board": "",
 "DebugManager": "",
-"Icon": "",
 "ShapePlacer": ""
 }
 
@@ -50,6 +50,7 @@ config/icon="res://icon.png"
 
 [autoload]
 
+NodePathsHolder="*res://Source/Autoloads/NodePathsHolder.tscn"
 Utility="*res://Source/Utility/Utility/Utility.tscn"
 GameManager="*res://Source/Autoloads/GameManager.tscn"
 

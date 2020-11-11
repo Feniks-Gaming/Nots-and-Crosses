@@ -1,5 +1,5 @@
 extends Area2D
-class_name Icon
+class_name BaseIcon
 
 # Icon is a base class that allows us to asign the shape either a cross or a 
 # circle to it's children. It alls oscales down shapes to fit a board. 

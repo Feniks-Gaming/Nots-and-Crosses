@@ -1,5 +1,5 @@
 class_name AvaliableShape
-extends Icon
+extends BaseIcon
 
 # Allows player to pick up a shape and deectivates other shape when one of the 
 # two is activie in play. It changes colour when players uses a shape. 
@@ -13,7 +13,7 @@ var is_colour_adjused = false
 const COLOUR_GRAY := Color(0.219608, 0.219608, 0.219608)
 const COLOUR_NORMAL := Color(1, 1, 1) 
 
-const shape_placer = preload("res://Source/Shape Placer/ShapePlacer.tscn")
+var shape_placer = NodePathsHolder.ShapePlacer_scene
 
 
 func _process(delta) -> void:

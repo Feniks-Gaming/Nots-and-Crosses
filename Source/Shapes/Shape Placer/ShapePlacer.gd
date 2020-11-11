@@ -1,4 +1,4 @@
-extends Icon
+extends BaseIcon
 class_name ShapePlacer
 
 # Shape placer is created when AvaliableShape is clicked
@@ -8,7 +8,7 @@ class_name ShapePlacer
 signal destroyed
 signal placed
 
-const icon = preload("res://Source/Icon/Icon.tscn")
+var icon = NodePathsHolder.BaseIcon_scene
 
 var can_move: bool = true
 var can_create_shapes: bool = false
