@@ -23,3 +23,9 @@ func do_percent_chance_check(chance:float) -> bool:
 		return false
 	else: 
 		return true
+
+
+func return_dictionary_key_from_value(my_dictonary, my_value):
+	# Returns key given a dictionary and it's value 
+		var key = my_dictonary.keys()[my_dictonary.values().find(my_value)]
+		return key

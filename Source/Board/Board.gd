@@ -17,7 +17,7 @@ func _on_Segment_mouse_inside_area(segment:Area2D) -> void:
 	emit_signal("segment_activated",active_segment)
 
 
-func _on_Segment_mouse_outside_area(segment:Area2D):
+func _on_Segment_mouse_outside_area(segment:Area2D) -> void:
 	# We need this check to prevent mouse from moving too quickly to next segment
 	# If mouse enters next segment and signal "segment_deacivated" is emited
 	# shape would foolow mouse rather than stay inside a segment. This ensures
@@ -28,4 +28,36 @@ func _on_Segment_mouse_outside_area(segment:Area2D):
 		print("mouse out")
 
 
+func _on_Segment_shape_placed_inside(segment:Area2D, shape) -> void:
+	print(segment.name,shape)
 
+
+# posible combinations
+# [yes,yes,yes]
+
+# [no, no, no,
+# yes, yes,yes]
+
+#[no, no, no,
+# no, no, no,
+# yes, yes, yes]
+
+# [yes, no, no,
+# yes, no, no,
+# yes, no, no]
+
+# [no, yes, no,
+# no, yes, no,
+# no, yes, no]
+
+# [no, no, yes,
+# no, no, yes,
+# no, no, yes]
+
+# [yes,no,no
+# no, yes,no
+# no, no , yes]
+
+# [no,no,yes
+# no, yes,no
+# yes, no , no]
