@@ -6,11 +6,18 @@ class_name Board
 
 signal active_segment(position)
 signal mouse_out_of_segment
-
-var active_segment: Area2D
-
 signal segment_activated(segment)
 signal segment_deacivated
+
+enum Segments {
+		TopLeft, TopCentre, TopRight, 
+		MiddleLeft, MiddleCentre, MiddleRight
+		BottomLeft, BottomCentre, BottomRight}
+
+
+var active_segment: Area2D
+var board_state_cross: Array = [null,null,null,null,null,null,null,null,null]
+var board_state_circle: Array = [null,null,null,null,null,null,null,null,null]
 
 func _on_Segment_mouse_inside_area(segment:Area2D) -> void:
 	active_segment = segment
@@ -29,14 +36,22 @@ func _on_Segment_mouse_outside_area(segment:Area2D) -> void:
 
 
 func _on_Segment_shape_placed_inside(segment:Area2D, shape) -> void:
-	print(segment.name,shape)
+	var board_state_index = Segments.get(segment.name)
+	if shape == "CROSS":
+		board_state_cross[board_state_index] = shape
+	if shape == "CIRCLE":
+		board_state_circle[board_state_index] = shape
+	print(board_state_cross)
 
 
 # posible combinations
-# [yes,yes,yes]
+# [yes,yes,yes
+# no, no, no,
+# no, no, no]
 
 # [no, no, no,
-# yes, yes,yes]
+# yes, yes,yes,
+# no, no, no]
 
 #[no, no, no,
 # no, no, no,
