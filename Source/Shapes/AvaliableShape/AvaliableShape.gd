@@ -54,7 +54,6 @@ func _select() -> void:
 			is_selectable = false
 			is_selected = true
 			is_colour_adjused = true
-			print(shape)
 			create_shape_placer()
 
 

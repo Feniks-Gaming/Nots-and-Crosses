@@ -20,3 +20,5 @@ func activate_one_random_shape()-> void:
 	shape_to_activate.is_active = true
 
 
+func _on_Board_player_won(shape):
+	print(shape, " won a game")
