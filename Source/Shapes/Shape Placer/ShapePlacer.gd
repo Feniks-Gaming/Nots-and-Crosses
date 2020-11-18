@@ -8,7 +8,8 @@ class_name ShapePlacer
 signal destroyed
 signal placed
 
-var placed_shape = NodePathsHolder.PlacedShape_scene
+const placed_shape_path = NodePathsHolder.PlacedShape_scene
+var placed_shape = preload(placed_shape_path)
 
 var can_move: bool = true
 var can_create_shapes: bool = false

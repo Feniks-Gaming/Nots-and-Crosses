@@ -51,7 +51,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Noughts and Crosses"
-run/main_scene="res://Source/Test.tscn"
+run/main_scene="res://Source/Main.tscn"
 config/icon="res://icon.png"
 
 [autoload]

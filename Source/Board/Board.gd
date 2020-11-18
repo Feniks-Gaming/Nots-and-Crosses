@@ -9,6 +9,7 @@ signal mouse_out_of_segment
 signal segment_activated(segment)
 signal segment_deacivated
 signal player_won(shape)
+signal game_is_draw
 
 # Enums here use the same names as the Segments of a board we use it to 
 # be able to see if board state matches all winning combination 
@@ -21,9 +22,13 @@ enum Segments {
 var active_segment: Area2D # used to prevent mouse from moving too fast and messing detection
 var board_state_cross: Array = [0,0,0,0,0,0,0,0,0]
 var board_state_circle: Array = [0,0,0,0,0,0,0,0,0]
+var number_of_possible_shapes:int = 9
+var number_of_shapes_placed:int = 0
+
 
 func _ready() -> void:
 	connect("player_won", GameManager, "_on_Board_player_won")
+	connect("game_is_draw", GameManager, "_on_Board_game_is_draw")
 
 func _on_Segment_mouse_inside_area(segment:Area2D) -> void:
 	active_segment = segment
@@ -43,9 +48,13 @@ func _on_Segment_mouse_outside_area(segment:Area2D) -> void:
 func _on_Segment_shape_placed_inside(segment:Area2D, shape) -> void:
 	# Updates board_state for croses and circles depending a shape
 	# if there is a winner sends a signal
+	number_of_shapes_placed += 1
 	var current_board =_update_board_state(segment, shape)
 	if _check_for_winner(current_board):
 		emit_signal("player_won", shape)
+	if _check_for_draw():
+		emit_signal("game_is_draw")
+
 
 
 func _update_board_state(segment:Area2D, shape) -> Array:
@@ -88,3 +97,8 @@ func _check_for_winner(board)-> bool:
 			return true # end checking here and return true
 	return false # if all checks fail return false
 
+func _check_for_draw()-> bool:
+	if number_of_shapes_placed == number_of_possible_shapes:
+		return true
+	else:
+		return false

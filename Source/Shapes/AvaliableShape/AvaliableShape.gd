@@ -13,7 +13,8 @@ var is_colour_adjused = false
 const COLOUR_GRAY := Color(0.219608, 0.219608, 0.219608)
 const COLOUR_NORMAL := Color(1, 1, 1) 
 
-var shape_placer = NodePathsHolder.ShapePlacer_scene
+const shape_placer_path = NodePathsHolder.ShapePlacer_scene
+var shape_placer = preload(shape_placer_path)
 
 
 func _process(delta) -> void:
