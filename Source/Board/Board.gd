@@ -52,8 +52,9 @@ func _on_Segment_shape_placed_inside(segment:Area2D, shape) -> void:
 	var current_board =_update_board_state(segment, shape)
 	if _check_for_winner(current_board):
 		emit_signal("player_won", shape)
-	if _check_for_draw():
-		emit_signal("game_is_draw")
+	else: 
+		if _check_for_draw():
+			emit_signal("game_is_draw")
 
 
 
